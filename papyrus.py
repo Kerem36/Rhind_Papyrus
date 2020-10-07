@@ -8,9 +8,6 @@ def GCD(a, b):
 def main():
     a = int(input())
     b = int(input())
-    if b % 2 == 1:
-        a *= 2
-        b *= 2
     n = 2
     results = []
     while a > 1:
@@ -21,7 +18,7 @@ def main():
             d = GCD(new_a, new_b)
             a = new_a//d
             b = new_b//d
-            n = int(b/a)-1 # runs much faster with this command 
+            n = int(b/a) # runs much faster with this command 
             
         n += 1
 
