@@ -21,6 +21,7 @@ def main():
             d = GCD(new_a, new_b)
             a = new_a//d
             b = new_b//d
+            n = int(b/a)-1 # runs much faster with this command 
             
         n += 1
 
